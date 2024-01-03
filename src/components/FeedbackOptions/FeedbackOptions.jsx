@@ -1,6 +1,6 @@
 import css from './FeedbackOptions.module.css';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export default function FeedbackOptions({ options, handleFeedback }) {
   return (
     <div className={css.conteiner}>
       {options.map(option => {
@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           <button
             key={option}
             className={css.button}
-            onClick={() => onLeaveFeedback(option)}
+            onClick={() => handleFeedback(option)}
           >
             {option}
           </button>
@@ -16,4 +16,4 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       })}
     </div>
   );
-};
+}

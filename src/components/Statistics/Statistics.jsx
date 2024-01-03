@@ -1,12 +1,12 @@
 import css from './Statistics.module.css';
 
-export const Statistics = ({
+export default function Statistics({
   good,
   neutral,
   bad,
   total,
   positivePercentage,
-}) => {
+}) {
   return (
     <div>
       <ul>
@@ -28,4 +28,4 @@ export const Statistics = ({
       </ul>
     </div>
   );
-};
+}
