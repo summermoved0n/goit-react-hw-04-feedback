@@ -1,0 +1,31 @@
+.conteiner {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0;
+  height: 50px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid teal;
+  color: grey;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.1);
+  font-size: 18px;
+  border: none;
+  background-color: teal;
+  color: #fff;
+  transition: all 300ms ease;
+}
+
+.button:active {
+  background-color: rgb(59, 176, 197);
+}

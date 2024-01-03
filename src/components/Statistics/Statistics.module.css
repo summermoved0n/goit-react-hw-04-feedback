@@ -1,0 +1,12 @@
+.item {
+  color: grey;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+span {
+  color: teal;
+  font-weight: 500;
+  font-size: 22px;
+}
